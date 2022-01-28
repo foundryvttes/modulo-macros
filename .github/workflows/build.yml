@@ -42,13 +42,13 @@ jobs:
           # Filename for archive
           filename: 'macros.zip'
           # Base path for archive files
-          path: .
+          path: '.'
           # Working directory before zipping
-          directory: .
+          directory: '.'
           # List of excluded files / directories
-          exclusions: '*.git* /*node_modules/* .editorconfig .*.zip ./.github .gitignore'
+          exclusions: '*.git* /*node_modules/* .editorconfig *zip* /*.github* /*.gitignore/* /*.git/*'
           # Tool to use for archiving
-          type: zip
+          type: 'zip'
           
       - uses: actions/upload-artifact@v1
         with:
