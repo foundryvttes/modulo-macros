@@ -14,7 +14,7 @@
     }
   ],
   "url": "https://github.com/foundryvttes/modulo-macros",
-  "manifest": "https://github.com/foundryvttes/modulo-macros/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/foundryvttes/modulo-macros/main/module.json",
   "download": "https://github.com/foundryvttes/modulo-macros/releases/download/v0.0.6/macros.zip",
   "bugs": "https://github.com/foundryvttes/modulo-macros/issues",
   "readme": "https://github.com/foundryvttes/modulo-macros/main/README.md",
