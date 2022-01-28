@@ -1,0 +1,19 @@
+{
+  "name": "Table Rolls (Generic) v1.1",
+  "type": "script",
+  "author": "IWsOZbkFTpNYhEwx",
+  "img": "icons/weapons/thrown/bomb-metal-brown.webp",
+  "scope": "global",
+  "command": "//\n// Table Rolls (Generic) v1.1\n// by Viriato139ac\n\nconst myDialogOptions = {\n  width: 640,\n  //height: 800,\n  //top: 500,\n  //left: 500\n};\n\ntableRolls();\n\nfunction tableRolls() {\n  const tableOptions = game.tables.reduce(\n    (a, b) => (a += `<option value=\"${b.name}\">${b.name}</option>`),\n    ``\n  );\n\n  const content = `\n    <form>\n    <table class=\"paleBlueRows\">\n    <tbody>\n    <tr>\n    <td colspan=\"1\">Table</td>\n    <td colspan=\"3\" style=\"font-weight: bold;\"><select name=\"selectedTable\">${tableOptions}</select></td>\n    </tr>\n    </tbody>\n    </table>\n    </form>`;\n\n  new Dialog(\n    {\n      title: \"Table Rolls (Generic)\",\n      content,\n      buttons: {\n        play: {\n          label: \"Roll\",\n          callback: async (html) => {\n            const selectedTable = html.find(`[name=\"selectedTable\"]`).val();\n            const table = game.tables.getName(selectedTable);\n            let charRoll = await new Roll(table.data.formula);\n            charRoll.roll();\n            let flavourString = `Draws a result from the <span style=\"font-weight: bold;color: brown\">${table.name}</span> table`;\n            let contentString = `\n              <hr>\n              <table>\n              <tr>\n                  <th style=\"text-align: center; vertical-align: middle;\">Formula</th>\n                  <th style=\"text-align: center; vertical-align: middle;\">Result</th>\n              </tr>\n              <tr>\n              <td style=\"text-align: center; vertical-align: middle;\">${\n                table.data.formula\n              }</td>\n              <td style=\"text-align: center; vertical-align: middle;\">${\n                charRoll.result\n              }</td>\n              </tr>\n              </table>\n              <hr>\n              ${table.getResultsForRoll(charRoll.result)[0].data.text}\n              <hr>\n              `;\n\n            charRoll.toMessage({\n              user: game.user.id,\n              speaker: ChatMessage.getSpeaker(),\n              flavor: flavourString,\n              content: contentString,\n            });\n          },\n        },\n        cancel: {\n          label: \"Cancel\",\n          callback: (html) => console.log(\"Cancelled\"),\n        },\n      },\n      default: \"play\",\n    },\n    myDialogOptions\n  ).render(true);\n}",
+  "flags": {
+    "core": {
+      "sourceId": "Macro.wgLUh20C37G0olUy"
+    },
+    "exportSource": {
+      "world": "es-rqg-compendios",
+      "system": "rqg",
+      "coreVersion": "9.242",
+      "systemVersion": "1.12.0"
+    }
+  }
+}

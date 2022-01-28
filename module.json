@@ -1,0 +1,20 @@
+{
+    "name": "foundry_vtt_es_macros",
+    "title": "Recopilatorio de macros FoundryVTTEspañol",
+    "description": "<p>Recopilatorio de macros realizada por los miembros de la comunidad española de Foundry VTT!<br><br>Si quieres colaborar con este módulo, puedes realizar una Pull Request aquí: https://github.com/elfonochasis/foundryvtt-es-macros</p>",
+    "version": "0.1",
+    "author": "FoundryVTTEspañol",
+    "packs": [
+        
+    ],
+    "url": "https://github.com/elfonochasis/foundryvtt-es-macros",
+    "manifest": "https://github.com/elfonochasis/foundryvtt-es-macros/main/module.json",
+    "download": "",
+    "bugs": "https://github.com/elfonochasis/foundryvtt-es-macros/issues",
+    "readme": "https://github.com/elfonochasis/foundryvtt-es-macros/main/README.md",
+    "changelog": "https://github.com/elfonochasis/foundryvtt-es-macros/releases",
+    "license": "https://github.com/elfonochasis/foundryvtt-es-macros/main/LICENSE.md",
+    "socket": true,
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9"
+}
