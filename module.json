@@ -1,26 +1,26 @@
 {
-    "name": "foundry_vtt_es_macros",
-    "title": "Recopilatorio de macros FoundryVTTEspañol",
-    "description": "<p>Recopilatorio de macros realizada por los miembros de la comunidad española de Foundry VTT!<br><br>Si quieres colaborar con este módulo, puedes realizar una Pull Request aquí: https://github.com/elfonochasis/foundryvtt-es-macros</p>",
-    "version": "0.1",
-    "author": "FoundryVTTEspañol",
-    "packs": [
-        {
-            "name": "macros-genericas",
-            "label": "FoundryVTTEspañol - Genéricas",
-            "path": "packs/genericas.db",
-            "module": "foundry_vtt_es_macros",
-            "entity": "Macro"
-        }        
-    ],
-    "url": "https://github.com/foundryvttes/modulo-macros",
-    "manifest": "https://github.com/foundryvttes/modulo-macros/main/module.json",
-    "download": "https://github.com/foundryvttes/modulo-macros/releases/download/v0.0.1/macros.zip",
-    "bugs": "https://github.com/foundryvttes/modulo-macros/issues",
-    "readme": "https://github.com/foundryvttes/modulo-macros/main/README.md",
-    "changelog": "https://github.com/foundryvttes/modulo-macros/releases",
-    "license": "https://github.com/foundryvttes/modulo-macros/main/LICENSE.md",
-    "socket": true,
-    "minimumCoreVersion": "9",
-    "compatibleCoreVersion": "9"
+  "name": "foundry_vtt_es_macros",
+  "title": "Recopilatorio de macros FoundryVTTEspañol",
+  "description": "<p>Recopilatorio de macros realizada por los miembros de la comunidad española de Foundry VTT!<br><br>Si quieres colaborar con este módulo, puedes realizar una Pull Request aquí: https://github.com/elfonochasis/foundryvtt-es-macros</p>",
+  "version": "0.1",
+  "author": "FoundryVTTEspañol",
+  "packs": [
+    {
+      "name": "macros-genericas",
+      "label": "FoundryVTTEspañol - Genéricas",
+      "path": "packs/genericas.db",
+      "module": "foundry_vtt_es_macros",
+      "entity": "Macro"
+    }
+  ],
+  "url": "https://github.com/foundryvttes/modulo-macros",
+  "manifest": "https://github.com/foundryvttes/modulo-macros/main/module.json",
+  "download": "https://github.com/foundryvttes/modulo-macros/releases/download/v0.0.6/macros.zip",
+  "bugs": "https://github.com/foundryvttes/modulo-macros/issues",
+  "readme": "https://github.com/foundryvttes/modulo-macros/main/README.md",
+  "changelog": "https://github.com/foundryvttes/modulo-macros/releases",
+  "license": "https://github.com/foundryvttes/modulo-macros/main/LICENSE.md",
+  "socket": true,
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9"
 }
