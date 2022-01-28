@@ -46,7 +46,7 @@ jobs:
           # Working directory before zipping
           directory: .
           # List of excluded files / directories
-          exclusions: '*.git* /*node_modules/* .editorconfig *.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig .*.zip ./.github .gitignore'
           # Tool to use for archiving
           type: zip
           
