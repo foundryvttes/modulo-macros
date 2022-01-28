@@ -7,13 +7,13 @@
     "packs": [
         
     ],
-    "url": "https://github.com/elfonochasis/foundryvtt-es-macros",
-    "manifest": "https://github.com/elfonochasis/foundryvtt-es-macros/main/module.json",
-    "download": "",
-    "bugs": "https://github.com/elfonochasis/foundryvtt-es-macros/issues",
-    "readme": "https://github.com/elfonochasis/foundryvtt-es-macros/main/README.md",
-    "changelog": "https://github.com/elfonochasis/foundryvtt-es-macros/releases",
-    "license": "https://github.com/elfonochasis/foundryvtt-es-macros/main/LICENSE.md",
+    "url": "https://github.com/foundryvttes/modulo-macros",
+    "manifest": "https://github.com/foundryvttes/modulo-macros/main/module.json",
+    "download": "https://github.com/foundryvttes/modulo-macros/releases/download/v0.0.1/macros.zip",
+    "bugs": "https://github.com/foundryvttes/modulo-macros/issues",
+    "readme": "https://github.com/foundryvttes/modulo-macros/main/README.md",
+    "changelog": "https://github.com/foundryvttes/modulo-macros/releases",
+    "license": "https://github.com/foundryvttes/modulo-macros/main/LICENSE.md",
     "socket": true,
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9"
