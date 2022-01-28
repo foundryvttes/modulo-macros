@@ -58,6 +58,27 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
+      - name: Update module.json version
+        uses: jossef/action-set-json-field@v1
+        with:
+          file: module.json
+          field: download
+          value: https://github.com/foundryvttes/modulo-macros/releases/download/${{ steps.tag_version.outputs.new_tag }}/macros.zip
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "docs(): bumping release ${{ steps.tag_version.outputs.new_tag }}"
+          git tag ${{ steps.tag_version.outputs.new_tag }}
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ github.token }}
+          tags: true
+          
       - uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
