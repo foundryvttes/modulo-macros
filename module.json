@@ -5,7 +5,13 @@
     "version": "0.1",
     "author": "FoundryVTTEspañol",
     "packs": [
-        
+        {
+            "name": "macros-genericas",
+            "label": "FoundryVTTEspañol - Genéricas",
+            "path": "packs/genericas.db",
+            "module": "foundry_vtt_es_macros",
+            "entity": "Macro"
+        }        
     ],
     "url": "https://github.com/elfonochasis/foundryvtt-es-macros",
     "manifest": "https://github.com/elfonochasis/foundryvtt-es-macros/main/module.json",
