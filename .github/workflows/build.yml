@@ -46,7 +46,7 @@ jobs:
           # Working directory before zipping
           directory: '.'
           # List of excluded files / directories
-          exclusions: 'macros.zip /.github .gitignore /.git'
+          exclusions: '*.zip* .git* .git*/*'
           # Tool to use for archiving
           type: 'zip'
           
