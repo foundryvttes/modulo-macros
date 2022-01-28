@@ -76,6 +76,7 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ github.token }}
+          branch: main
           tags: true
           
       - uses: ncipollo/release-action@v1
