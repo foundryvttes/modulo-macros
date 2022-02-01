@@ -1,0 +1,16 @@
+{
+  "name": "Resultado de una tabla concreta",
+  "type": "script",
+  "author": "NLu8dzFBI3Kvrwky",
+  "img": "modules/game-icons-net/blackbackground/pierced-body.svg",
+  "scope": "global",
+  "command": "let table = game.tables.getName(\"NOMBRE_TABLA\")\n\nlet roll = await table.roll();\n\nlet content = `<p><strong>TEXTO</strong></p> ${roll.results[0].data.text}<br>`\n\nChatMessage.create({content: content})",
+  "flags": {
+    "exportSource": {
+      "world": "shadowshots",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.0"
+    }
+  }
+}

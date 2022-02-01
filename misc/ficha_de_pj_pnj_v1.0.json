@@ -1,0 +1,16 @@
+{
+  "name": "Ficha de pj/pnj",
+  "type": "script",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/swordman.svg",
+  "scope": "global",
+  "command": "fromUuid(\"Actor.TEXTOALPASARAJOURNAL\").then(entity => entity.sheet.render(true))",
+  "flags": {
+    "exportSource": {
+      "world": "shadowshots",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.0"
+    }
+  }
+}

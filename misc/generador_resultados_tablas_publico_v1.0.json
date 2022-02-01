@@ -1,0 +1,22 @@
+{
+  "name": "Generador de resultados de tablas (Público)",
+  "type": "script",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/light-thorny-triskelion.svg",
+  "scope": "global",
+  "command": "let table1 = game.tables.getName(\"NOMBRE_TABLA\")\nlet table2 = game.tables.getName(\"NOMBRE_TABLA\")\n\nlet roll1 = await table1.roll();\nlet roll2 = await table2.roll();\n\nlet content = `\n<p><strong>TEXTO</strong></p> ${roll1.results[0].data.text}<br> \n<p><strong>TEXTO</strong></p> ${roll2.results[0].data.text}.<br>`\n\nChatMessage.create({content: content})",
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "advanced-macros": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "shadowshots",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.0"
+    }
+  }
+}

@@ -11,6 +11,13 @@
       "path": "packs/genericas.db",
       "module": "foundry_vtt_es_macros",
       "entity": "Macro"
+    },
+    {
+      "name": "macros-sandbox",
+      "label": "FoundryVTTEspañol - Sandbox",
+      "path": "packs/sandbox.db",
+      "module": "foundry_vtt_es_macros",
+      "entity": "Macro"
     }
   ],
   "url": "https://github.com/foundryvttes/modulo-macros",

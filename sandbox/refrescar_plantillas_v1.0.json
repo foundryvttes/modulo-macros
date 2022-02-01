@@ -1,0 +1,19 @@
+{
+  "name": "Refrescar plantillas",
+  "type": "script",
+  "author": "NLu8dzFBI3Kvrwky",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "// **************************************************************** \n// Macro:        BuildAllActorTemplates                                                    \n// Description:  Build all actor templates.\n//               Useful if the template does not show normally\n// Compability:  Tested with \n//               Foundry 0.8.9 - Sandbox 0.10.12                  \n// ================================================================ \n// Date       Version  Author               Description             \n// ---------- -------- -------------------- ----------------------- \n// 2021-12-16 1.0.0    Ramses800            Macro created.         \n// **************************************************************** \n\nBuildAllActorTemplates();\n\n// Example for building only the template named _PlayerCharacter\n// \n// BuildAllActorTemplates('_PlayerCharacter');\n\n// Parameters\n// actortemplatename - optional, if set only this template will rebuild\nfunction BuildAllActorTemplates(actortemplatename=''){\n  let actortemplates;\n  if(actortemplatename==''){\n    // get all actor templates\n    actortemplates=game.actors.filter(y => y.type==\"character\" && y.data.data.istemplate==true);\n  }\n  else{\n    // get specific actor\n    actortemplates=game.actors.filter(y => y.type==\"character\" && y.data.data.istemplate==true && y.name==actortemplatename);\n  }    \n  if(actortemplates.length>0){ \n    // loop all actors\n    actortemplates.forEach(function(actortemplate)  { \n      if(actortemplate!=null){\n        \n        ui.notifications.info('Building actor template '+ actortemplate.name )\n        console.log('Building actor template '+ actortemplate.name )\n        try{\n          actortemplate.sheet.buildSheet();\n        }\n        catch(err){\n          ui.notifications.error('Error building actor template ' + actortemplate.name);\n          console.err('Error building actor template' + actortemplate.name);\n          console.err(err);\n        }\n      }\n    });    \n  }\n  else{\n    ui.notifications.warn('No actor template found');\n  }\n    \n}",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "aquelarreinfortunios",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.1"
+    }
+  }
+}

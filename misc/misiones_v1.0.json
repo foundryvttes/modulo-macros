@@ -1,0 +1,19 @@
+{
+  "name": "Misiones",
+  "type": "script",
+  "author": "NLu8dzFBI3Kvrwky",
+  "img": "icons/tools/navigation/map-plain-green.webp",
+  "scope": "global",
+  "command": "QuestLog.render(true);",
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "aquelarreinfortunios",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.1"
+    }
+  }
+}

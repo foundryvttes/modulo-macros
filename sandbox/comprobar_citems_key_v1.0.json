@@ -1,0 +1,19 @@
+{
+  "name": "Comprobar cItems key",
+  "type": "script",
+  "author": "NLu8dzFBI3Kvrwky",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "( \n    async () => {\n        for(let i=0;i<game.items.contents.length;i++){\n            let s_object = game.items.contents[i];\n            if(s_object.type==\"cItem\")\n                console.log(s_object.name + \" id:\" + s_object.id + \" ciKey:\" + s_object.data.data.ciKey);\n        }\n    }\n)();",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "aquelarreinfortunios",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.1"
+    }
+  }
+}

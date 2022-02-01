@@ -1,0 +1,19 @@
+{
+  "name": "Encender y apagar luz global",
+  "type": "script",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/sunrise.svg",
+  "scope": "global",
+  "command": "async function main() {\n  if (canvas.scene.data.darkness === 0.0) {\n    await canvas.scene.update({globalLight: false}) // turn global light off\n    canvas.scene.update({darkness: 1.0}, {animateDarkness: true}) // make it night\n  } else {\n    await canvas.scene.update({darkness: 0.0}, {animateDarkness: true}) // make it day \n    await new Promise(resolve => setTimeout(resolve, 10000));\n    canvas.scene.update({globalLight: true}) // turn global light on\n  }\n}\nmain();",
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "shadowshots",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.0"
+    }
+  }
+}

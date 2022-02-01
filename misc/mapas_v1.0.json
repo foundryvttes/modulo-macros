@@ -1,0 +1,22 @@
+{
+  "name": "Mapas",
+  "type": "script",
+  "author": "NLu8dzFBI3Kvrwky",
+  "img": "icons/tools/navigation/map-marked-green.webp",
+  "scope": "global",
+  "command": "window.Ardittristan.InlineViewer.sendUrl('URL_GOOGLE_EARTH', false, 800, 600, 'interactivemap', '', [])",
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "advanced-macros": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "aquelarreinfortunios",
+      "system": "sandbox",
+      "coreVersion": "9.242",
+      "systemVersion": "0.12.1"
+    }
+  }
+}
